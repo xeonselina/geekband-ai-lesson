@@ -24,7 +24,7 @@ A、B
 
 问：attetion 机制是如何解决信息丢失问题的
 
-答：[!img](https://www.notion.so/Attention-cdb50f4ccaa34f9380cbd18a6cac6557?pvs=4#5357ebdffb8147d09c668beb4540d9c0)
+答：[!(https://www.notion.so/Attention-cdb50f4ccaa34f9380cbd18a6cac6557?pvs=4#5357ebdffb8147d09c668beb4540d9c0)]
 与之前的模型不同，现在每一个输出词（Decoder中的红色部分）都有一个与之关联的Context Vector（绿色部分），而这个Context Vector是动态生成的，它对输入序列中的每个词的注意力分布进行了编码。
 
 更具体地说，当Decoder在生成每一个输出词时，它都会通过Attention机制来决定应该将注意力集中在输入序列的哪些部分（Encoder中的蓝色部分）。这意味着在生成每一个输出词时，模型都会考虑输入序列中与当前输出词最相关的部分（找重点），而不是仅仅依赖于一个固定的Context Vector。
